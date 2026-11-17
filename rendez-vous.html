@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prendre rendez-vous — Hanane, thérapeute &amp; hypnothérapeute</title>
+  <meta name="description" content="Prendre rendez-vous avec Hanane, thérapeute et hypnothérapeute : par téléphone au +32 472 98 49 82 ou par e-mail. Consultations en cabinet et en ligne.">
+  <meta name="theme-color" content="#f7efe4">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preload" as="image" href="assets/img/hanane-portrait.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('hanane-seen')) document.documentElement.classList.add('seen'); } catch (e) {}
+  </script>
+</head>
+<body class="page-light">
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__logo">
+      <img src="assets/img/logo-plume.webp" alt="" width="92" height="92">
+      <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" pathLength="1"/></svg>
+    </div>
+    <span class="loader__name">Hanane</span>
+    <span class="loader__role">thérapeute · hypnothérapeute</span>
+  </div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Hanane — accueil">
+      <img src="assets/img/logo-plume.webp" alt="" width="54" height="54">
+      <span class="brand__text">
+        <span class="brand__name">Hanane</span>
+        <span class="brand__role">thérapeute · hypnothérapeute</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#parcours">À propos</a>
+      <a href="index.html#approche">Approche</a>
+      <a href="index.html#accompagnements">Accompagnements</a>
+    </nav>
+    <a class="btn btn--dark btn--sm header__cta" href="tel:+32472984982">
+      Appeler
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu">
+    <nav class="menu__links" aria-label="Menu mobile">
+      <a href="index.html" style="--i:0">Accueil</a>
+      <a href="index.html#parcours" style="--i:1">À propos</a>
+      <a href="index.html#approche" style="--i:2">Approche</a>
+      <a href="index.html#accompagnements" style="--i:3">Accompagnements</a>
+      <a href="index.html#consultations" style="--i:4">Consultations</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+32472984982">+32 472 98 49 82</a>
+      <a href="mailto:Hanane.Boguz@yahoo.fr">Hanane.Boguz@yahoo.fr</a>
+    </div>
+  </div>
+
+  <main class="rdv">
+    <div class="shadows" aria-hidden="true"></div>
+
+    <div class="wrap rdv__grid">
+
+      <div class="rdv__visual">
+        <div class="portrait" data-reveal>
+          <div class="media media--reveal arch">
+            <div class="media__inner" data-parallax="18">
+              <img src="assets/img/hanane-portrait.webp" width="1000" height="1333"
+                   alt="Portrait de Hanane, thérapeute et hypnothérapeute">
+            </div>
+          </div>
+          <div class="badge" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <defs><path id="ring" d="M50 50m-39 0a39 39 0 1 1 78 0a39 39 0 1 1-78 0"/></defs>
+              <text><textPath href="#ring" textLength="240">Hanane · Thérapeute · Hypnothérapeute ·</textPath></text>
+            </svg>
+            <img src="assets/img/logo-plume.webp" alt="" width="64" height="64">
+          </div>
+        </div>
+      </div>
+
+      <div class="rdv__content" id="infos">
+        <p class="eyebrow" data-reveal>Prendre rendez-vous</p>
+        <h1 class="rdv__title" data-split>Parlons-en,<br><em>tout simplement.</em></h1>
+        <p class="rdv__lead" data-reveal>
+          Pour convenir d’un rendez-vous ou poser une question, contactez-moi directement
+          par téléphone ou par e-mail. Les séances ont lieu en cabinet ou en ligne.
+        </p>
+
+        <ul class="contact-list">
+          <li class="contact-item" data-reveal style="--d:.05s">
+            <a class="contact-row" href="tel:+32472984982">
+              <span class="contact-row__label">Téléphone</span>
+              <span class="contact-row__value">+32 472 98 49 82</span>
+            </a>
+            <button class="copy" type="button" data-copy="+32472984982">Copier</button>
+          </li>
+          <li class="contact-item" data-reveal style="--d:.13s">
+            <a class="contact-row" href="mailto:Hanane.Boguz@yahoo.fr?subject=Demande%20de%20rendez-vous">
+              <span class="contact-row__label">E-mail</span>
+              <span class="contact-row__value">Hanane.Boguz@yahoo.fr</span>
+            </a>
+            <button class="copy" type="button" data-copy="Hanane.Boguz@yahoo.fr">Copier</button>
+          </li>
+          <!-- ADRESSE-RDV -->
+          <li class="contact-item" data-reveal style="--d:.29s">
+            <div class="contact-row">
+              <span class="contact-row__label">Consultations</span>
+              <span class="contact-row__value">En cabinet &amp; en ligne<small>Uniquement sur rendez-vous</small></span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="rdv__actions" data-reveal style="--d:.36s">
+          <a class="btn btn--dark" href="tel:+32472984982">
+            Appeler Hanane
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="mailto:Hanane.Boguz@yahoo.fr?subject=Demande%20de%20rendez-vous">
+            Écrire un e-mail
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <p class="rdv__note" data-reveal style="--d:.44s">Au plaisir de vous rencontrer.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer footer--slim">
+    <div class="wrap footer__bottom">
+      <span>© <span data-year>2026</span> Hanane — Thérapeute &amp; hypnothérapeute</span>
+      <a href="index.html">← Retour à l’accueil</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

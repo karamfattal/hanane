@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hanane — Thérapeute &amp; hypnothérapeute</title>
+  <meta name="description" content="Hanane, thérapeute et hypnothérapeute. Un accompagnement sur mesure en hypnose ericksonienne, en cabinet et en ligne : addictions, anxiété et stress, estime de soi, rupture.">
+  <meta name="theme-color" content="#2a1d15">
+  <meta property="og:title" content="Hanane — Thérapeute &amp; hypnothérapeute">
+  <meta property="og:description" content="Un espace pour vous, tout simplement. Hypnose ericksonienne, en cabinet et en ligne.">
+  <meta property="og:image" content="assets/img/hero-cabinet.webp">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preload" as="image" href="assets/img/hero-cabinet.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('hanane-seen')) document.documentElement.classList.add('seen'); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- Écran d'ouverture -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__logo">
+      <img src="assets/img/logo-plume.webp" alt="" width="92" height="92">
+      <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" pathLength="1"/></svg>
+    </div>
+    <span class="loader__name">Hanane</span>
+    <span class="loader__role">thérapeute · hypnothérapeute</span>
+  </div>
+
+  <!-- En-tête -->
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Hanane — accueil">
+      <img src="assets/img/logo-plume.webp" alt="" width="54" height="54">
+      <span class="brand__text">
+        <span class="brand__name">Hanane</span>
+        <span class="brand__role">thérapeute · hypnothérapeute</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#parcours">À propos</a>
+      <a href="#approche">Approche</a>
+      <a href="#accompagnements">Accompagnements</a>
+      <a href="#consultations">Consultations</a>
+    </nav>
+    <a class="btn btn--dark btn--sm header__cta" href="rendez-vous.html">
+      Prendre rendez-vous
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu">
+    <nav class="menu__links" aria-label="Menu mobile">
+      <a href="#parcours" style="--i:0">À propos</a>
+      <a href="#approche" style="--i:1">Approche</a>
+      <a href="#accompagnements" style="--i:2">Accompagnements</a>
+      <a href="#consultations" style="--i:3">Consultations</a>
+      <a href="rendez-vous.html" style="--i:4"><em>Prendre rendez-vous</em></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+32472984982">+32 472 98 49 82</a>
+      <a href="mailto:Hanane.Boguz@yahoo.fr">Hanane.Boguz@yahoo.fr</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+      <div class="hero__bg" data-hero-bg>
+        <img src="assets/img/hero-cabinet.webp" width="1536" height="1024" fetchpriority="high"
+             alt="Le cabinet de Hanane : fauteuils en velours, plantes vertes et lumière dorée de fin de journée">
+      </div>
+      <div class="hero__veil"></div>
+      <div class="hero__motes" data-motes aria-hidden="true"></div>
+
+      <div class="wrap hero__content">
+        <p class="hero__eyebrow">Hypnose ericksonienne · En cabinet &amp; en ligne</p>
+        <h1 class="hero__title" data-split>Un espace pour vous,<br><em>tout simplement.</em></h1>
+        <p class="hero__lead">
+          Un accompagnement sur mesure, alliant écoute, expertise et créativité, pour vous aider
+          à mieux vous comprendre, à traverser vos difficultés et à construire une vie plus alignée.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="rendez-vous.html" data-magnetic>
+            Prendre rendez-vous
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="link-underline" href="#parcours">Découvrir mon parcours</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#valeurs" aria-label="Défiler vers la suite">
+        <span>Défiler</span><i></i>
+      </a>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="values" id="valeurs" aria-label="Ce qui guide mon accompagnement">
+      <div class="wrap values__grid">
+        <div class="value" data-reveal style="--d:0s">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="3.2" pathLength="1"/>
+            <path d="M15 14a14 14 0 0 0 0 20" pathLength="1"/>
+            <path d="M33 14a14 14 0 0 1 0 20" pathLength="1"/>
+            <path d="M9 9a21 21 0 0 0 0 30" pathLength="1"/>
+            <path d="M39 9a21 21 0 0 1 0 30" pathLength="1"/>
+          </svg>
+          <div>
+            <h3>Écoute active</h3>
+            <p>Un espace bienveillant et sans jugement.</p>
+          </div>
+        </div>
+        <div class="value" data-reveal style="--d:.12s">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 9c6 7 6 18 0 25-6-7-6-18 0-25z" pathLength="1"/>
+            <path d="M21.5 30C20 24 15.500 19.500 8.500 18.500 9.500 27 15.500 33 24 34" pathLength="1"/>
+            <path d="M26.500 30c1.500-6 6-10.500 13-11.500C38.500 27 32.500 33 24 34" pathLength="1"/>
+            <path d="M7 31c4 5.500 10 8 17 8s13-2.500 17-8" pathLength="1"/>
+          </svg>
+          <div>
+            <h3>Approche personnalisée</h3>
+            <p>Adaptée à votre histoire et à vos besoins.</p>
+          </div>
+        </div>
+        <div class="value" data-reveal style="--d:.24s">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 42V22" pathLength="1"/>
+            <path d="M24 27c0-8-6-13.500-15-14 0 8.500 6 14 15 14z" pathLength="1"/>
+            <path d="M24 22c0-7 5-12.500 14-13 0 8-5 13-14 13z" pathLength="1"/>
+          </svg>
+          <div>
+            <h3>Outils concrets</h3>
+            <p>Pour avancer vers un mieux-être durable.</p>
+          </div>
+        </div>
+        <div class="value" data-reveal style="--d:.36s">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 40C11 31.500 6 24 6 17.500a9.200 9.200 0 0 1 18-3 9.200 9.200 0 0 1 18 3C42 24 37 31.500 24 40z" pathLength="1"/>
+          </svg>
+          <div>
+            <h3>En cabinet et en ligne</h3>
+            <p>Une flexibilité pour vous accompagner où que vous soyez.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="about" id="parcours">
+      <div class="shadows" aria-hidden="true"></div>
+      <div class="wrap about__grid">
+
+        <div class="portrait" data-reveal>
+          <div class="media media--reveal arch">
+            <div class="media__inner" data-parallax="34">
+              <img src="assets/img/hanane-portrait.webp" width="1000" height="1333" loading="lazy"
+                   alt="Portrait de Hanane, thérapeute et hypnothérapeute">
+            </div>
+          </div>
+          <div class="portrait__tag">
+            <img src="assets/img/logo-plume.webp" alt="" width="34" height="34">
+            Hanane, à votre écoute
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow" data-reveal>À propos</p>
+          <h2 class="h2" data-split>Mon <em>parcours</em></h2>
+          <p class="about__lead" data-reveal>
+            Pendant plus de quinze ans, j’ai construit une carrière en tant que chef d’entreprise.
+          </p>
+          <p data-reveal style="--d:.08s">
+            Curieuse et passionnée depuis de nombreuses années par le développement personnel
+            et les médecines alternatives, je poursuis aujourd’hui encore cette quête, qui me permet
+            de parfaire mes connaissances et d’accompagner au mieux les personnes qui m’accordent
+            leur confiance.
+          </p>
+          <p data-reveal style="--d:.16s">
+            Accompagner chacun à résoudre ses problématiques, qu’elles soient d’ordre émotionnel
+            ou comportemental, et à retrouver un mieux-être et un équilibre de vie.
+          </p>
+          <blockquote class="about__quote" data-reveal>
+            «&nbsp;Ce n’est plus seulement une passion pour moi, c’est un état d’être.&nbsp;»
+          </blockquote>
+          <div class="about__sign" data-reveal>
+            <span class="signature">Hanane</span>
+            <a class="btn btn--ghost" href="#approche">
+              Découvrir mon approche
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Approche -->
+    <section class="approche" id="approche">
+      <div class="shadows shadows--dark shadows--flip" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light" data-reveal>Mon approche</p>
+        <h2 class="approche__title" data-split>
+          L’hypnose ericksonienne, une thérapie brève qui fait appel à <em>vos ressources intérieures.</em>
+        </h2>
+
+        <div class="approche__grid">
+          <article class="step" data-reveal style="--d:0s">
+            <span class="step__num">01</span>
+            <h3>Révéler</h3>
+            <p>
+              Elle révèle vos potentiels pour vous permettre de trouver les solutions adaptées
+              à vos blocages et de libérer les nœuds émotionnels.
+            </p>
+          </article>
+          <article class="step" data-reveal style="--d:.14s">
+            <span class="step__num">02</span>
+            <h3>Se rencontrer</h3>
+            <p>
+              Une approche unique, à la rencontre de soi&nbsp;: un travail en profondeur
+              pour se reconnecter et trouver les réponses à ses questions.
+            </p>
+          </article>
+          <article class="step" data-reveal style="--d:.28s">
+            <span class="step__num">03</span>
+            <h3>Changer</h3>
+            <p>
+              C’est dans l’écoute et en toute bienveillance que je vous accompagne pour atteindre
+              le changement souhaité, à travers des méthodes qui favorisent le bien-être
+              psychologique, émotionnel et spirituel.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accompagnements -->
+    <section class="services" id="accompagnements">
+      <div class="shadows shadows--flip" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="services__head">
+          <p class="eyebrow eyebrow--center" data-reveal>Mes accompagnements</p>
+          <h2 class="h2" data-split>Des accompagnements adaptés à <em>chaque étape de vie</em></h2>
+        </div>
+
+        <div class="cards">
+          <a class="card" href="rendez-vous.html" data-reveal style="--d:0s">
+            <div class="card__media"><img src="assets/img/addictions.webp" width="1100" height="733" loading="lazy" alt=""></div>
+            <span class="card__num">01</span>
+            <span class="card__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <div class="card__body">
+              <p class="card__tag">Tabac · Jeu · Alcool</p>
+              <h3>Addictions</h3>
+              <p class="card__text">Se libérer de ce qui vous retient et retrouver votre liberté.</p>
+            </div>
+          </a>
+          <a class="card" href="rendez-vous.html" data-reveal style="--d:.1s; --pos:68% 50%">
+            <div class="card__media"><img src="assets/img/anxiete.webp" width="1100" height="733" loading="lazy" alt=""></div>
+            <span class="card__num">02</span>
+            <span class="card__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <div class="card__body">
+              <p class="card__tag">Apaisement</p>
+              <h3>Anxiété et stress</h3>
+              <p class="card__text">Retrouver l’apaisement dans un quotidien parfois oppressant.</p>
+            </div>
+          </a>
+          <a class="card" href="rendez-vous.html" data-reveal style="--d:.2s; --pos:16% 50%">
+            <div class="card__media"><img src="assets/img/estime.webp" width="1100" height="733" loading="lazy" alt=""></div>
+            <span class="card__num">03</span>
+            <span class="card__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <div class="card__body">
+              <p class="card__tag">Confiance</p>
+              <h3>Estime de soi</h3>
+              <p class="card__text">Renforcer la confiance en soi et se reconnecter à ses ressources.</p>
+            </div>
+          </a>
+          <a class="card" href="rendez-vous.html" data-reveal style="--d:.3s; --pos:30% 50%">
+            <div class="card__media"><img src="assets/img/rupture.webp" width="1100" height="733" loading="lazy" alt=""></div>
+            <span class="card__num">04</span>
+            <span class="card__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <div class="card__body">
+              <p class="card__tag">Couple · Enfants · Parents</p>
+              <h3>Rupture</h3>
+              <p class="card__text">Rétablir le dialogue et renouer les liens.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultations -->
+    <section class="split" id="consultations" aria-label="Consultations en cabinet et en ligne">
+      <article class="panel" style="--pos:60% 50%">
+        <div class="panel__bg" data-parallax="40"><img src="assets/img/cabinet-rose.webp" width="1400" height="933" loading="lazy" alt="Le cabinet : fauteuil rose poudré, plantes et lumière chaude"></div>
+        <div class="panel__body">
+          <p class="eyebrow" data-reveal>En cabinet</p>
+          <h3 data-reveal style="--d:.08s">Un lieu confidentiel <em>et inspirant</em></h3>
+          <p data-reveal style="--d:.16s">
+            Je vous accueille dans un espace chaleureux, pensé pour votre bien-être,
+            propice à l’écoute et à la réflexion.
+          </p>
+          <a class="btn btn--ghost-light" href="rendez-vous.html#infos" data-reveal style="--d:.24s">
+            Informations pratiques
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="panel" style="--pos:64% 50%">
+        <div class="panel__bg" data-parallax="40"><img src="assets/img/en-ligne.webp" width="1500" height="750" loading="lazy" alt="Un ordinateur portable et une tasse sur une table en bois"></div>
+        <div class="panel__body">
+          <p class="eyebrow" data-reveal>En ligne</p>
+          <h3 data-reveal style="--d:.08s">Un accompagnement <em>où que vous soyez</em></h3>
+          <p data-reveal style="--d:.16s">
+            Les consultations en ligne offrent la même qualité d’écoute et d’accompagnement,
+            avec la flexibilité dont vous avez besoin.
+          </p>
+          <a class="btn btn--ghost-light" href="rendez-vous.html" data-reveal style="--d:.24s">
+            Réserver une séance en ligne
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Appel final -->
+    <section class="cta">
+      <div class="shadows" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <div class="cta__logo" data-reveal><img src="assets/img/logo-plume.webp" width="104" height="104" loading="lazy" alt=""></div>
+        <h2 class="h2" data-split>Le premier pas, <em>tout simplement.</em></h2>
+        <p data-reveal>
+          Un appel ou un message suffit pour convenir d’un premier rendez-vous,
+          en cabinet ou en ligne.
+        </p>
+        <a class="btn btn--dark" href="rendez-vous.html" data-magnetic>
+          Prendre rendez-vous
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo-plume.webp" alt="" width="54" height="54" loading="lazy">
+          <span class="brand__text">
+            <span class="brand__name">Hanane</span>
+            <span class="brand__role">thérapeute · hypnothérapeute</span>
+          </span>
+        </a>
+        <p class="footer__tagline">Un espace pour vous, tout simplement.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#parcours">À propos</a></li>
+          <li><a href="#approche">Approche</a></li>
+          <li><a href="#accompagnements">Accompagnements</a></li>
+          <li><a href="#consultations">Consultations</a></li>
+          <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+32472984982">+32 472 98 49 82</a></li>
+          <li><a href="mailto:Hanane.Boguz@yahoo.fr">Hanane.Boguz@yahoo.fr</a></li>
+          <!-- ADRESSE-FOOTER -->
+          <li>En cabinet &amp; en ligne, sur rendez-vous</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>© <span data-year>2026</span> Hanane — Thérapeute &amp; hypnothérapeute</span>
+      <span>Hypnose ericksonienne</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
