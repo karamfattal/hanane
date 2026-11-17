@@ -693,7 +693,6 @@ em { font-style: italic; }
 .duo__col .eyebrow { justify-self: start; }
 .duo__col .h2 { align-self: end; margin: 20px 0 clamp(22px, 2.4vw, 34px); }
 .duo__text p + p { margin-top: 15px; }
-.duo__text p.signature { margin-top: 28px; }
 .portrait { position: relative; max-width: 480px; margin-inline: auto; width: 100%; }
 .portrait::before {
   content: "";
@@ -731,13 +730,6 @@ em { font-style: italic; }
 .portrait__tag img { width: 34px; height: 34px; border-radius: 50%; }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 
-.signature {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 2.3rem;
-  line-height: 1;
-  color: var(--ink);
-}
 
 /* ---------- Accompagnements ---------- */
 
