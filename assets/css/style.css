@@ -477,8 +477,11 @@ em { font-style: italic; }
   padding-top: 170px;
   padding-bottom: clamp(72px, 11vh, 130px);
 }
+.hero__h1, .rdv__h1 { font: inherit; }
+.hero__title, .rdv__title { display: block; }
+.rdv__h1 .eyebrow { display: flex; }
 .hero__eyebrow {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: clamp(20px, 3vh, 34px);
@@ -1020,7 +1023,7 @@ em { font-style: italic; }
   line-height: 1.35;
   color: rgba(251, 246, 238, 0.86);
 }
-.footer h4 {
+.footer__title {
   margin: 0 0 18px;
   font-size: 0.7rem;
   font-weight: 500;
