@@ -181,6 +181,72 @@
     });
   }
 
+  /* ---------- Accompagnements : défilement horizontal ---------- */
+  var scroller = document.querySelector('[data-scroller]');
+  if (scroller) {
+    var prevBtn = document.querySelector('[data-scroller-prev]');
+    var nextBtn = document.querySelector('[data-scroller-next]');
+    var bar = document.querySelector('[data-scroller-bar]');
+
+    var stepSize = function () {
+      var card = scroller.querySelector('.card');
+      var gap = parseFloat(getComputedStyle(scroller).columnGap) || 20;
+      return card ? card.getBoundingClientRect().width + gap : scroller.clientWidth * 0.8;
+    };
+    var updateScroller = function () {
+      var max = scroller.scrollWidth - scroller.clientWidth;
+      var x = scroller.scrollLeft;
+      if (prevBtn) prevBtn.disabled = x <= 2;
+      if (nextBtn) nextBtn.disabled = x >= max - 2;
+      if (bar) {
+        var ratio = Math.min(1, scroller.clientWidth / scroller.scrollWidth);
+        var travel = max > 0 ? (x / max) * (1 - ratio) / ratio * 100 : 0;
+        bar.style.width = (ratio * 100).toFixed(2) + '%';
+        bar.style.transform = 'translateX(' + travel.toFixed(2) + '%)';
+      }
+    };
+    var move = function (dir) {
+      scroller.scrollBy({ left: dir * stepSize(), behavior: reduce ? 'auto' : 'smooth' });
+    };
+    if (prevBtn) prevBtn.addEventListener('click', function () { move(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { move(1); });
+    scroller.addEventListener('scroll', updateScroller, { passive: true });
+    window.addEventListener('resize', updateScroller);
+    scroller.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); move(1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); move(-1); }
+    });
+    updateScroller();
+
+    /* glisser à la souris */
+    var dragging = false, dragged = false, dragStartX = 0, dragStartLeft = 0;
+    scroller.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      dragging = true; dragged = false;
+      dragStartX = e.clientX; dragStartLeft = scroller.scrollLeft;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!dragging) return;
+      var dx = e.clientX - dragStartX;
+      if (!dragged && Math.abs(dx) > 6) { dragged = true; scroller.classList.add('is-dragging'); }
+      if (dragged) scroller.scrollLeft = dragStartLeft - dx;
+    });
+    window.addEventListener('pointerup', function () {
+      if (!dragging) return;
+      dragging = false;
+      if (!dragged) return;
+      var step = stepSize();
+      var max = scroller.scrollWidth - scroller.clientWidth;
+      var target = Math.min(max, Math.round(scroller.scrollLeft / step) * step);
+      scroller.scrollTo({ left: target, behavior: reduce ? 'auto' : 'smooth' });
+      setTimeout(function () { scroller.classList.remove('is-dragging'); }, 450);
+    });
+    scroller.addEventListener('click', function (e) {
+      if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
+    }, true);
+    scroller.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  }
+
   /* ---------- Copier un contact ---------- */
   document.querySelectorAll('[data-copy]').forEach(function (btn) {
     var label = btn.textContent;
